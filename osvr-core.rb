@@ -1,4 +1,4 @@
-class Osvr < Formula
+class OsvrCore < Formula
   desc "OSVR Core Libraries"
   homepage "http://www.osvr.org"
   head "https://github.com/OSVR/OSVR-Core.git"
