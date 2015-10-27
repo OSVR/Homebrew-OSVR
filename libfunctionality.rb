@@ -1,5 +1,5 @@
 class Libfunctionality < Formula
-  desc "A minimal library for dynamically-loaded or statically-linked functionality modules."
+  desc "Minimal library for dynamically-loaded or statically-linked functionality modules."
   homepage "https://github.com/OSVR/libfunctionality"
   head "https://github.com/OSVR/libfunctionality.git"
 
@@ -11,5 +11,4 @@ class Libfunctionality < Formula
       system "make", "install"
     end
   end
-
 end
