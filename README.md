@@ -3,6 +3,6 @@ This is a HEAD-only tap for [OSVR](http://www.osvr.org) (Open Source Virtual Rea
 
 To install, simply run:
 ```
-brew tap d235j/osvr
+brew tap OSVR/osvr
 brew install osvr-core
 ```
