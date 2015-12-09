@@ -4,5 +4,6 @@ This is a HEAD-only tap for [OSVR](http://www.osvr.org) (Open Source Virtual Rea
 To install, simply run:
 ```
 brew tap OSVR/osvr
+brew install jsoncpp --HEAD
 brew install osvr-core --HEAD
 ```
