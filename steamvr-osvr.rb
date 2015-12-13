@@ -1,7 +1,6 @@
 class SteamvrOsvr < Formula
   desc "SteamVR-OSVR"
   homepage "https://github.com/OSVR/SteamVR-OSVR"
-  url "https://github.com/OSVR/SteamVR-OSVR.git", :tag => "v0.1", :revision => "c4aa9ec4d39bee8375c633f50aa465e64d2ea0c6"
   head "https://github.com/OSVR/SteamVR-OSVR.git"
 
   depends_on "osvr-core"
