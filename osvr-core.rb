@@ -10,7 +10,14 @@ class OsvrCore < Formula
   depends_on :python
   depends_on "libusb"
 
+  option :universal
+
   def install
+    if build.universal?
+      ENV.universal_binary
+      args << "-DCMAKE_OSX_ARCHITECTURES=#{Hardware::CPU.universal_archs.as_cmake_arch_flags}"
+    end
+
     mkdir "build" do
       system "cmake", "..", *std_cmake_args
       system "make", "install"
