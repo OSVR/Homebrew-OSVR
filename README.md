@@ -5,7 +5,6 @@ To install, simply run:
 ```
 brew tap OSVR/osvr
 
-brew install jsoncpp --HEAD # Release version is too old for us
 brew install osvr-core --HEAD
 ```
 

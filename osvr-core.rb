@@ -7,6 +7,7 @@ class OsvrCore < Formula
   depends_on "opencv"
   depends_on "libfunctionality"
   depends_on "boost"
+  depends_on "jsoncpp"
   depends_on :python
   depends_on "libusb"
 
