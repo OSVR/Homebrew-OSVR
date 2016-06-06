@@ -22,14 +22,14 @@ class SteamvrOsvr < Formula
   end
 
   def caveats
-    if self.installed? && File.exist?("#{opt_prefix}/drivers/osvr/bin/osx32/driver_osvr.dylib")
+    if self.installed? && File.exist?("#{opt_prefix}/lib/openvr/osvr/bin/osx32/driver_osvr.dylib")
       return <<-EOS.undent
         driver_osvr.dylib was installed to:
-          #{opt_prefix}/drivers/osvr/bin/osx32/driver_osvr.dylib
+          #{opt_prefix}/lib/openvr/osvr/bin/osx32/driver_osvr.dylib
 
         You will want to symlink this driver to the SteamVR drivers location:
           mkdir -p "$HOME/Library/Application Support/Steam/steamapps/common/SteamVR/drivers/osvr/bin/osx32"
-          ln -s "#{opt_prefix}/drivers/osvr/bin/osx32/driver_osvr.dylib" "$HOME/Library/Application Support/Steam/SteamApps/common/SteamVR/drivers/osvr/bin/osx32"
+          ln -s "#{opt_prefix}/lib/openvr/osvr/bin/osx32/driver_osvr.dylib" "$HOME/Library/Application Support/Steam/SteamApps/common/SteamVR/drivers/osvr/bin/osx32"
         You may additionally want to modify steamvr.vrsettings to force-enable the osvr driver.
       EOS
     end
