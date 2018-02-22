@@ -4,11 +4,11 @@ class OsvrCore < Formula
   head "https://github.com/OSVR/OSVR-Core.git"
 
   depends_on "cmake" => :build
-  depends_on "homebrew/science/opencv"
+  depends_on "opencv"
   depends_on "libfunctionality"
   depends_on "boost"
   depends_on "jsoncpp"
-  depends_on :python
+  depends_on "python"
   depends_on "libusb"
 
   option :universal
