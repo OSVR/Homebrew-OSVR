@@ -8,7 +8,7 @@ class OsvrCore < Formula
   depends_on "libfunctionality"
   depends_on "boost"
   depends_on "jsoncpp"
-  depends_on "python@2"
+  depends_on "python@2" => :build
   depends_on "libusb"
 
   option :universal
